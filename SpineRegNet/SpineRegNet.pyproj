@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c808ac17-d7c8-4c80-b007-163494d41bb3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SpineRegNet.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,152 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SpineRegNet.py" />
+    <Folder Include="ext\" />
+    <Folder Include="ext\medipy-lib\" />
+    <Folder Include="ext\medipy-lib\medipy\" />
+    <Folder Include="ext\neuron\" />
+    <Folder Include="ext\neuron\neuron\" />
+    <Folder Include="ext\neuron\neuron\__pycache__\" />
+    <Folder Include="ext\pynd-lib\" />
+    <Folder Include="ext\pynd-lib\pynd\" />
+    <Folder Include="ext\pynd-lib\pynd\__pycache__\" />
+    <Folder Include="ext\pytools-lib\" />
+    <Folder Include="ext\pytools-lib\pytools\" />
+    <Folder Include="ext\pytools-lib\pytools\__pycache__\" />
+    <Folder Include="SpineRegNet\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\neuron\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\pytools-lib\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\__pycache__\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\__pycache__\" />
+    <Folder Include="SpineRegNet\tensorflow_backend\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ext\medipy-lib\medipy\metrics.py" />
+    <Compile Include="ext\medipy-lib\medipy\__init__.py" />
+    <Compile Include="ext\neuron\neuron\callbacks.py" />
+    <Compile Include="ext\neuron\neuron\dataproc.py" />
+    <Compile Include="ext\neuron\neuron\generators.py" />
+    <Compile Include="ext\neuron\neuron\inits.py" />
+    <Compile Include="ext\neuron\neuron\layers.py" />
+    <Compile Include="ext\neuron\neuron\metrics.py" />
+    <Compile Include="ext\neuron\neuron\models.py" />
+    <Compile Include="ext\neuron\neuron\plot.py" />
+    <Compile Include="ext\neuron\neuron\utils.py" />
+    <Compile Include="ext\neuron\neuron\__init__.py" />
+    <Compile Include="ext\pynd-lib\pynd\imutils.py" />
+    <Compile Include="ext\pynd-lib\pynd\ndutils.py" />
+    <Compile Include="ext\pynd-lib\pynd\segutils.py" />
+    <Compile Include="ext\pynd-lib\pynd\__init__.py" />
+    <Compile Include="ext\pytools-lib\pytools\iniparse.py" />
+    <Compile Include="ext\pytools-lib\pytools\patchlib.py" />
+    <Compile Include="ext\pytools-lib\pytools\plotting.py" />
+    <Compile Include="ext\pytools-lib\pytools\timer.py" />
+    <Compile Include="ext\pytools-lib\pytools\__init__.py" />
+    <Compile Include="README" />
+    <Compile Include="SpineRegNet\generators.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\callbacks.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\dataproc.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\generators.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\inits.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\layers.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\metrics.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\models.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\plot.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\regularizers.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\utils.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\vae_tools.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__init__.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\imutils.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\ndutils.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\segutils.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\__init__.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\iniparse.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\patchlib.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\plot.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\timer.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\__init__.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\layers.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\losses.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\model_io.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\networks.py" />
+    <Compile Include="SpineRegNet\tensorflow_backend\__init__.py" />
+    <Compile Include="SpineRegNet\utils.py" />
+    <Compile Include="SpineRegNet\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ext\medipy-lib\medipy\metrics.pyc" />
+    <Content Include="ext\medipy-lib\medipy\__init__.pyc" />
+    <Content Include="ext\medipy-lib\readme.md" />
+    <Content Include="ext\neuron\neuron\__pycache__\callbacks.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\callbacks.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\dataproc.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\dataproc.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\generators.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\generators.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\inits.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\inits.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\layers.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\layers.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\metrics.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\metrics.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\models.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\models.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\plot.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\plot.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\utils.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\utils.cpython-38.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="ext\neuron\neuron\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="ext\neuron\README.md" />
+    <Content Include="ext\pynd-lib\.gitignore" />
+    <Content Include="ext\pynd-lib\pynd\__pycache__\ndutils.cpython-36.pyc" />
+    <Content Include="ext\pynd-lib\pynd\__pycache__\ndutils.cpython-38.pyc" />
+    <Content Include="ext\pynd-lib\pynd\__pycache__\segutils.cpython-36.pyc" />
+    <Content Include="ext\pynd-lib\pynd\__pycache__\segutils.cpython-38.pyc" />
+    <Content Include="ext\pynd-lib\pynd\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="ext\pynd-lib\pynd\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="ext\pynd-lib\readme.md" />
+    <Content Include="ext\pytools-lib\.gitignore" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\iniparse.cpython-36.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\iniparse.cpython-38.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\patchlib.cpython-36.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\patchlib.cpython-38.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\plotting.cpython-36.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\plotting.cpython-38.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\timer.cpython-36.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\timer.cpython-38.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="ext\pytools-lib\pytools\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="ext\pytools-lib\readme.md" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\bibtex.txt" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\LICENSE.md" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\callbacks.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\dataproc.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\generators.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\inits.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\layers.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\metrics.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\models.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\plot.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\regularizers.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\utils.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\vae_tools.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\neuron\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\neuron\README.md" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\__pycache__\ndutils.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\__pycache__\segutils.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pynd\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\__pycache__\iniparse.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\__pycache__\patchlib.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\__pycache__\plot.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\__pycache__\timer.cpython-36.pyc" />
+    <Content Include="SpineRegNet\tensorflow_backend\external\pytools-lib\pytools\__pycache__\__init__.cpython-36.pyc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

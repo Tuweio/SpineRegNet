@@ -1,0 +1,13 @@
+This repository is the implementation of the SpineRegNet .
+
+Some codes were borrowed from
+https://github.com/voxelmorph/voxelmorph
+
+Environment and installation
+    python=3.6
+    tensorflow-gpu=1.14.0
+    keras-gpu==2.3.1
+    nibabel=3.2.1
+    tqdm=4.59.0
+    pickle=4.0
+
